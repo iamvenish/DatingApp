@@ -33,8 +33,17 @@ namespace API
             {
                 options.UseSqlite(_config.GetConnectionString("defaultConnection"));
             });
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAngularApp", builder =>
+                {
+                    builder.WithOrigins("https://localhost:4200").AllowAnyHeader().AllowAnyMethod();
+                });
+            });
             services.AddControllers();
             services.AddAuthorization();
+            services.AddCors();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -46,6 +55,9 @@ namespace API
 
             // app.UseHttpsRedirection();
             app.UseRouting();
+            // implemented policy down here nothing 
+            // app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
+            app.UseCors("AllowAngularApp");
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

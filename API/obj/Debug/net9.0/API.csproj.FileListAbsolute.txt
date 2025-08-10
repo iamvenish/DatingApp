@@ -148,3 +148,4 @@ C:\Users\Dell\Desktop\DatingApp\API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.W
 C:\Users\Dell\Desktop\DatingApp\API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Dell\Desktop\DatingApp\API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Dell\Desktop\DatingApp\API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Dell\Desktop\DatingApp\API\obj\Debug\net9.0\API.sourcelink.json
